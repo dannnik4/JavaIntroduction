@@ -10,7 +10,7 @@ public class Math {
 
         // |a - b| / (a + b) ^3 - √c
 
-        double result = java.lang.Math.abs(a - b) / java.lang.Math.pow((a + b),3) - java.lang.Math.pow(c,0.5);
+        double result = java.lang.Math.abs(a - b) / java.lang.Math.pow((a + b), 3) - java.lang.Math.pow(c, 0.5);
 
         System.out.println(result);
 
