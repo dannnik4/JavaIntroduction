@@ -17,7 +17,6 @@ public class Switch {
 
         printMonth(number);
 
-
     }
 
     private static void printMonth(int number) {
