@@ -1,4 +1,4 @@
-package com.hillel.classwork.lesson6;
+package com.hillel.classwork.lesson06;
 
 public class StringOverloading {
 
