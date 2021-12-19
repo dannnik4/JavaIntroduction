@@ -1,4 +1,4 @@
-package com.hillel.classwork.lesson06;
+package com.hillel.classwork.lesson6;
 
 public class Sum {
 
