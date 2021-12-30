@@ -22,14 +22,20 @@ public class MinNum {
     }
 
     public static void printMin(int num1, int num2, int num3) {
-        if (num1 == num2 || num1 == num3 || num2 == num3) {
-            System.out.println("Какие-то из чисел одинаковые");
+        if (num1 == num2 && num1 == num3) {
+            System.out.println("Все числа одинаковые");
+        } else if (num1 == num2 && num1 < num3) {
+            System.out.println("Первое число (" + num1 + ") и второе число (" + num2 + ") - минимальные");
+        } else if (num2 == num3 && num1 < num2) {
+            System.out.println("Первое число (" + num1 + ") и третье число (" + num3 + ") - минимальные");
+        } else if (num2 == num3 && num2 < num1) {
+            System.out.println("Второе число (" + num2 + ") и третье число (" + num3 + ") - минимальные");
         } else if (num1 < num2 && num1 < num3) {
             System.out.println("Первое число (" + num1 + ") - минимальное");
         } else if (num2 < num1 && num2 < num3) {
             System.out.println("Второе число (" + num2 + ") - минимальное");
         } else if (num3 < num1 && num3 < num2) {
-            System.out.println("Второе число (" + num3 + ") - минимальное");
+            System.out.println("Третье число (" + num3 + ") - минимальное");
         } else {
             System.out.println("Ошибка");
         }
