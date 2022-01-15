@@ -7,7 +7,6 @@ import java.util.Random;
 
 public class NegativeNumbers {
 
-
     static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
