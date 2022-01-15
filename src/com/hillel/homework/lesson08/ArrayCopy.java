@@ -13,6 +13,7 @@ public class ArrayCopy {
 
         int numbers[] = new int[20];
 
+        System.out.println("Введите 20 элементов массива (каждый новый элемент с новой строки): ");
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = Integer.parseInt(READER.readLine());
         }
