@@ -18,7 +18,7 @@ public class Sequence {
             numbers[i] = Integer.parseInt(READER.readLine());
         }
 
-        int index = 0; // Если это число остаёться нулём - массив возрастает, а если становиться единицей - значит нет
+        int index = 0; // Если это число остаёться нулём - массив возрастает, а если становиться единицей - значит убывает
 
         for (int i = 0; i < numbers.length - 1; i++) {
             if (numbers[i] > numbers[i + 1]) {
