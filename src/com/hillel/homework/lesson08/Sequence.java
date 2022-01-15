@@ -24,7 +24,7 @@ public class Sequence {
             if (numbers[i] > numbers[i + 1]) {
                 index = 1;
             } else {
-                index = 0;
+                index = 000;
             }
 
         }
