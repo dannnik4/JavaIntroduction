@@ -26,7 +26,6 @@ public class Sequence {
             } else {
                 index = 0;
             }
-
         }
 
         if (numbers.length <= 1) {
