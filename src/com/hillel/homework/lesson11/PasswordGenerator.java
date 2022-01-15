@@ -18,7 +18,7 @@ public class PasswordGenerator {
 
         int counter = 0;
         char[] newPassword = new char[password.length];
-        int[] historyRandomNumbers = new int[password.lengthc];
+        int[] historyRandomNumbers = new int[password.length];
         Arrays.fill(historyRandomNumbers, -1);
 
         do {
