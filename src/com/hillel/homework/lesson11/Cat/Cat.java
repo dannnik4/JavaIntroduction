@@ -19,7 +19,7 @@ public class Cat {
     }
 
     public void run() {
-        System.out.println("cat runs");
+        System.out.println("cat runs ");
     }
 
     public boolean equals(Object obj) {

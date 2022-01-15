@@ -19,7 +19,7 @@ public class CatMain {
 
         Cat cat2 = new Cat();
 
-        cat2.name = "Maltese";
+        cat2.name = "Maltese ";
         cat2.age = 8;
         cat2.weight = 6;
         cat2.breed = "White";
