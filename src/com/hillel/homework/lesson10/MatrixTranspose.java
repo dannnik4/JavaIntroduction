@@ -11,62 +11,49 @@ public class MatrixTranspose {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Введите количество строк матрицы: ");
-        int MatrixM = Integer.parseInt(READER.readLine());
+        int matrixm = Integer.parseInt(READER.readLine());
 
         System.out.println("Введите количество столбцов матрицы: ");
-        int MatrixN = Integer.parseInt(READER.readLine());
+        int matrixn = Integer.parseInt(READER.readLine());
 
-        int[][] Matrix = new int[MatrixM][MatrixN];
+        int[][] matrix = new int[matrixm][matrixn];
 
-        InputMatrix(Matrix, MatrixM, MatrixN);
-        OutputMatrix(Matrix, MatrixM, MatrixN);
-        TransposeMatrix(Matrix, MatrixM, MatrixN);
-        OutputTransposeMatrix(Matrix, MatrixM, MatrixN);
+        inputmatrix(matrix, matrixm, matrixn);
+        outputmatrix(matrix, matrixm, matrixn);
+        transposematrix(matrix, matrixm, matrixn);
 
     }
 
-    public static void InputMatrix(int[][] Matrix, int MatrixM, int MatrixN) throws IOException {
+    public static void inputmatrix(int[][] matrix, int matrixm, int matrixn) throws IOException {
 
         System.out.println("Введите числа (каждое число с новой строки и после пустой строки новая строка):");
-        for (int i = 0; i < MatrixM; i++) {
-            for (int j = 0; j < MatrixN; j++) {
-                Matrix[i][j] = Integer.parseInt(READER.readLine());
+        for (int i = 0; i < matrixm; i++) {
+            for (int j = 0; j < matrixn; j++) {
+                matrix[i][j] = Integer.parseInt(READER.readLine());
             }
             System.out.println();
         }
 
     }
 
-    public static void OutputMatrix(int[][] Matrix, int MatrixM, int MatrixN) {
+    public static void outputmatrix(int[][] matrix, int matrixm, int matrixn) {
 
         System.out.println("Исходная матрица: ");
-        for (int i = 0; i < MatrixM; i++) {
-            for (int j = 0; j < MatrixN; j++) {
-                System.out.print(Matrix[i][j] + " ");
+        for (int i = 0; i < matrixm; i++) {
+            for (int j = 0; j < matrixn; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
 
     }
 
-    public static void TransposeMatrix(int[][] Matrix, int MatrixM, int MatrixN) {
-
-        for (int i = 0; i < MatrixM; i++) {
-            for (int j = i; j < MatrixN; j++) {
-                int temp = Matrix[i][j];
-                Matrix[i][j] = Matrix[j][i];
-                Matrix[j][i] = temp;
-            }
-        }
-
-    }
-
-    public static void OutputTransposeMatrix(int[][] Matrix, int MatrixM, int MatrixN) {
+    public static void transposematrix(int[][] matrix, int matrixm, int matrixn) {
 
         System.out.println("\n" + "Транспонированная матрица: ");
-        for (int i = 0; i < MatrixM; i++) {
-            for (int j = 0; j < MatrixN; j++) {
-                System.out.print(Matrix[i][j] + " ");
+        for (int i = 0; i < matrixn; i++) {
+            for (int j = 0; j < matrixm; j++) {
+                System.out.print(matrix[j][i] + " ");
             }
             System.out.println();
         }
