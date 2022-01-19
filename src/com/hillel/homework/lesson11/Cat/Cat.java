@@ -24,7 +24,7 @@ public class Cat {
 
     public boolean equals(Object obj) {
         if (obj instanceof Cat) {
-            Cat cat = (Cat) obj;
+            Cat cat = (Cat) objk;
             return this.name.equals(cat.name) && this.age == cat.age;
         }
         if (obj instanceof Cat) {
