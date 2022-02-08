@@ -1,4 +1,4 @@
-package com.hillel.homework.lesson14.TemperatureConverter;
+package com.hillel.homework.lesson14;
 
 class Kelvin implements Converter{
 
